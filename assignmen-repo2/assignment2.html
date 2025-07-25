@@ -9,9 +9,52 @@
 
     <style>
         @media screen and (min-width: 428px) and (max-width: 926px) {
-            
 
-        }
+        .nav {
+            display: flex;
+             align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            }
+        .logo {
+            margin-right: auto;
+            padding: 10px 0 10px 10px;
+  }
+   .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 10px;
+  }
+  .nav-links li {
+    display: none;
+  }
+  .search-cart {
+    display: flex !important;
+    align-items: center;
+  }
+  .search-cart li {
+    display: block !important; /* Show the Cart($56) item */
+  }
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+.banner-img {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+  }
+  .banner {
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+
+}
     </style>
 
 </head>
@@ -144,16 +187,22 @@
         <!----Plant Lover Section-->
 
         <section class="plant-lover-section">
-            <div>
+            <div class="overlay">
                 <div class="box-image">
                     <img src="images/deal-bloom.png" alt="plant-1">
+                    <h3>60% Off | Bloom Plant</h3>
+                    <button>Shop Now</button>
                 </div>
-                <div>
+                <div class="box-image">
                     <img src="images/deal-ana.png" alt="plant-2">
+                    <h3>20% Off | Deal Ana Plant</h3>
+                    <button>Shop Now</button>
                 </div>
             </div>
-            <div>
-                <img src="images/deal-zabo.png" alt="Plant-3" class="zabo-image">
+            <div class="overlay">
+                <img src="images/deal-zabo.png" alt="Plant-3" class="zabo-image" id="last-plant">
+                <h3>20% Off | Deal Zabo Plant</h3>
+                <button>Shop Now</button>
             </div>
         </section>
     </div>
@@ -197,5 +246,4 @@
         </div>
     </footer>
 </body>
-
 </html>
